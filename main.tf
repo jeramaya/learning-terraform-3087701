@@ -25,7 +25,7 @@ resource "aws_instance" "blog" {
 vpc_security_group_ids = [module.blog_sg.security_group_id]
 
 
-  vpc_security_group_ids = [aws_security_group.blog.id]
+
 
   tags = {
     Name = "Learing Terraform"
