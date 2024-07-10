@@ -42,7 +42,7 @@ name = "new_blog"
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
   egress_rules        = ["all-all"]
-  egress_cidir_blocks = ["0.0.0.0/0"]
+  egress_cidr_blocks = ["0.0.0.0/0"]
 }
 
 resource "aws_security_group" "blog" { 
