@@ -30,14 +30,7 @@ resource "aws_instance" "blog" {
   }
 }
 
-data "aws_vpc" "blog" {
-  ami             = data.aws_ami.app_ami.id
-  instance_type   = var.instance_type
 
-  tags = {
-  Name = "learning Terraform"
-  }
-}
 
 resource "aws_security_group" "blog" {
  name           = "blog"
