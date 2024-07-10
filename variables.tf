@@ -49,14 +49,12 @@ vpc_security_group_ids = [module.blog_sg.security_group_id]
   }
 }
 
-variable"asg_min_size"
-{
+variable"asg_min_size"{
   description = " Minimum number of instances in the ASG"
  default           = 1
 }
 
-variable"asg_max_size"
-{
+variable"asg_max_size"{
   description = " Maximum number of instances in the ASG"
  default           = 2
 }
