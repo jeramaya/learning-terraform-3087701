@@ -19,12 +19,12 @@ default = true
 }
 
 data "aws_vpc" "blog" {
-ami             = data.aws_ami.app_ami.id
-instance_type   = var.instance_type
+  ami             = data.aws_ami.app_ami.id
+  instance_type   = var.instance_type
 
-tags = {
-Name = "learning Terraform"
- }
+  tags = {
+  Name = "learning Terraform"
+  }
 }
 resource "aws_instance" "blog" {
   ami           = data.aws_ami.app_ami.id
